@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, lightpink, turquoise);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+    margin: 0;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.chat-container {
+    position: relative;
+    width: 350px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+padding: 20px;
+overflow: hidden;
+}.chat-box {
+display: flex;
+flex-direction: column;
+height: 300px;
+overflow-y: scroll;
+border: 1px solid #ccc;
+padding: 10px;
+margin-bottom: 10px;
+background-color: darkgrey;
+border-radius: 5px;
+background-image: url('https://www.shutterstock.com/image-vector/happy-robot-3d-ai-character-600nw-2464455965.jpg'); /* Add your image URL here */
+background-size: cover; /* Makes the image cover the chatbox */
+background-position: center; /* Centers the image */
+background-repeat: no-repeat; /* Prevents the image from repeating */
+border-radius: 5px;
+gap: 10px;
+}
+.user-message {
+align-self: flex-end; /* Aligns messages to the left */
+background-color: lightgoldenrodyellow;
+padding: 8px 12px;
+border-radius: 10px;
+max-width: 80%; /* Limit the width of user messages */
+word-wrap: break-word; /* Allows long words to break and not overflow */
+}
+
+/* Bot message style */
+.bot-message {
+align-self: flex-start; /* Aligns messages to the right */
+background-color: #c8e6c9; /* Light green background for bot messages */
+
+
+
+    padding: 8px 12px;
+    border-radius: 10px;
+    max-width: 80%; /* Limit the width of bot messages */
+    word-wrap: break-word; /* Allows long words to break and not overflow */
+}
+
+#userInput {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top:10px;
+    border: none;
+    background-color: #45a049;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
